@@ -1,0 +1,49 @@
+# BURST — Bedside UGIB Risk Stratification and Transfusion
+
+A six-feature random-forest model for early identification of high-risk
+upper gastrointestinal bleeding (UGIB) and prediction of transfusion need,
+using only data available within the first hour of emergency-department
+presentation.
+
+Developed for an MSc thesis (Health Statistics & Data Analytics, Aristotle
+University of Thessaloniki) on a single-centre retrospective cohort
+(n = 133) at the First Department of Internal Medicine, Evangelismos
+General Hospital, Athens.
+
+## Disclaimer
+Research and academic use only. This is a proof-of-concept model that has
+undergone internal validation only and is **not** intended or validated for
+clinical decision-making. No patient data are included in this repository.
+
+## Repository contents
+- `eosfeatureselect.R` — feature selection (Part 1)
+- `ugibpart2.R` — model training, validation, comparators, figures (Part 2)
+- `BURSTpipeline.R`
+
+## Requirements
+R 4.5.3, with: readxl, dplyr, tidyr, ggplot2, rpart, rpart.plot,
+randomForest, glmnet, pROC, patchwork, ggplotify.
+
+## Data availability
+The underlying data contain identifying patient information and are not
+publicly available (GDPR and ethics-committee restrictions). De-identified
+data may be available on reasonable request, subject to approval by the
+Evangelismos Scientific Council and Bioethics Committee.
+
+## Ethics
+Reviewed and approved by the Evangelismos General Hospital Scientific 
+Council and Bioethics Committee (Protocol No. 452, 17 December 2025).
+
+## Reporting
+Developed and reported per TRIPOD+AI; risk of bias assessed with PROBAST.
+
+## Author and supervision
+Georgios Pournaras, MD, MSc(c) — author; designed and implemented the analysis pipeline.
+Andigoni Malousi, PhD, MSc — supervision; School of Medicine, AUTh.
+
+## Citation
+Pournaras G. *Combining Machine Learning Predictive Models and Traditional
+Scoring Systems for Early Identification of Severe UGIB and a Possible Tool
+to Optimize Transfusion Strategies.* MSc thesis, Aristotle University of
+Thessaloniki, 2026.
+
